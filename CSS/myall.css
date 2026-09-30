@@ -1,0 +1,90 @@
+
+@import url('https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC&display=swap');
+
+:root{
+
+    --page-background-color: #d8d4c8;
+    --logo-background-color: #89a6aa;
+    --nav-background-color: #c9b784;
+
+    --button-background-color: #5a554d;
+    --button-text-color: #f4f0e6;
+
+    --content-background-color: #eee9dc;
+
+    --title-color: #6f8f96;
+    --paragraph-color: #494742;
+
+    --footer-text-color: #5f5a50;
+
+    --shadow-color: #8f8779;
+    --hover-shadow-color: #558ea2;
+}
+
+body{
+    font-family: "LXGW WenKai TC", cursive;
+}
+/* 字體租細 */
+.fw-100{
+    font-weight: 100;
+}
+.fw-200{
+    font-weight: 200;
+}
+.fw-300{
+    font-weight: 300;
+}
+.fw-400{
+    font-weight: 400;
+}
+.fw-500{
+    font-weight: 500;
+}
+.fw-600{
+    font-weight: 600;
+}
+.fw-700{
+    font-weight: 700;
+}
+.fw-800{
+    font-weight: 800;
+}
+.fw-900{
+    font-weight: 900;
+}
+
+/* 標題 */
+.mytitle-01{
+    font-size: 64px;
+    font-weight: 900;
+    text-align: center;
+    color:  #6f8f96;
+
+}
+
+.mytitle-02{
+    font-size: 52px;
+    font-weight: 700;
+    text-align: center;
+    color:#558ea2;
+
+}
+
+.mytitle-03{
+    font-size: 52px;
+    font-weight: 700;
+    text-align: center;
+    color:#c9b784;
+}
+
+    .mytitle-04{
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    color:#848ac9;
+}
+/* 背景圖 */
+.bg-img{
+    background-position: center center;
+    background-size: cover;
+}
