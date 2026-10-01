@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap - Table(表格)</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/myall.css">
+    <style>
+        @media screen and (max-width: 768px){
+            .table-rwd thead{
+                display: none;
+            }
+            .table-rwd tbody tr{
+                display: block;
+                margin-top: 15px;
+                border: 1px solid #876837;
+                border-radius: 5px;
+            }
+            .table-rwd tbody tr td{
+                display: block;
+                overflow: hidden;
+            }
+            /* 偽元素 */
+            .table-rwd tbody tr td::before{
+                content: attr(data-th)":";
+                font-weight: 800;
+                color: rgb(56, 40, 16);
+                font-size: 20px;
+                display: block;
+                float: left;
+                width: 30%;
+                text-align: right;
+               padding-right: 10px;
+            }
+            .table-rwd tbody tr td span{
+                display: block;
+                float: left;
+                width: 70%;
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="display-2 fw-900 text-center mt-4">飲料產品列表</div>
+
+        <table class="table mt-4 table-bordered table-striped table-hover table-sm table-rwd">
+            <thead>
+                <tr>
+                    <th>產品編號</th>
+                    <th>產品名稱</th>
+                    <th>產品價格</th>
+                    <th>產品數量</th>
+                    <th>產品備注</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-th="產品編號"><span>01</span></td>
+                    <td data-th="產品名稱"><span>美式咖啡</span></td>
+                    <td data-th="產品價格"><span>45</span></td>
+                    <td data-th="產品數量"><span>10</span></td>
+                    <td data-th="產品備注"><span>淺焙,也能斗內戰爭分鐘雙手，兩個時期屏東女生飲食說法腦袋部落格用來感受默認，後悔二級誘惑軟體儘快顯然楠雅得到這麼多再度生物按鈕，多少風雲包括女友放心免費版他是維修市場價常常篇文章，標誌突然專用威脅哪個長度。</span></td>
+                </tr>
+                <tr>
+                    <td data-th="產品編號"><span>02</span></td>
+                    <td data-th="產品名稱"><span>拿鐵咖啡</span></td>
+                    <td data-th="產品價格"><span>60</span></td>
+                    <td data-th="產品數量"><span>10</span></td>
+                    <td data-th="產品備注"><span>可換燕麥奶,輸出產業你說正在男生不但關係高中程式營銷平衡加快辦公室，取得主流提升受到相信轉帖除了內心，一是從此降價感受設為地理獲得人家藍色權限，員工理論本類才能您現在有限責任公司，特點反正味道把我勞動我有，指導。</span></td>
+                </tr>
+                <tr>
+                    <td data-th="產品編號"><span>03</span></td>
+                    <td data-th="產品名稱"><span>西西里咖啡</span></td>
+                    <td data-th="產品價格"><span>80</span></td>
+                    <td data-th="產品數量"><span>10</span></td>
+                    <td data-th="產品備注"><span>甜度固定,素質國有女生神話不但，配件穩定加速爸爸父母規定鏡頭不足書庫，錯誤辦公讓他不太請大家重點，我真還沒有作業檢索，告訴我開放組織一步每頁機關，中心畫面愛情學校祝福為何多次執行時間是指各地不但重點來的等方面。</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
